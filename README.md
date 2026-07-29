@@ -1,4 +1,5 @@
-r to # med_survey_kidney_demo
+# med_survey_kidney_demo
+
 These code samples use public NHANES survey data as a compact example of a reproducible survey-data workflow: merge respondent-level files, construct an analytic table, retain survey-design variables, check missingness, compute derived indicators, and run basic statistical/ML analysis.
 
 NHANES is a complex U.S. health survey with interviews, physical exams, and lab measurements. In this example, the target variable is a simple CKD indicator derived from serum creatinine/eGFR and urine albumin-creatinine ratio. The health topic is only a demonstration; the transferable part is the survey-data processing and modelling workflow.
