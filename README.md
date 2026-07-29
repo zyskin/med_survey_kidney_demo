@@ -1,4 +1,4 @@
-# med_survey_kidney_demo
+r to # med_survey_kidney_demo
 These code samples use public NHANES survey data as a compact example of a reproducible survey-data workflow: merge respondent-level files, construct an analytic table, retain survey-design variables, check missingness, compute derived indicators, and run basic statistical/ML analysis.
 
 NHANES is a complex U.S. health survey with interviews, physical exams, and lab measurements. In this example, the target variable is a simple CKD indicator derived from serum creatinine/eGFR and urine albumin-creatinine ratio. The health topic is only a demonstration; the transferable part is the survey-data processing and modelling workflow.
@@ -12,4 +12,4 @@ Uses the cleaned file from Code 1 and computes correlations between an ordinal C
 **Code 3 — Python: ML classification pipeline**
 Reads the cleaned file, defines a binary CKD outcome, performs train/test splitting, imputation, scaling, logistic regression, random forest fitting, and test-set evaluation. This sample is unweighted; it demonstrates reproducible modelling workflow rather than formal population estimation.
 
-`WTMEC2YR` is the NHANES two-year MEC examination weight, taken from the NHANES demographic file. Since the example uses exam/lab variables, it is the relevant weight to retain and use for weighted estimates. For formal NHANES inference, I would use `WTMEC2YR` together with `SDMVPSU` and `SDMVSTRA`.
+`WTMEC2YR` is the NHANES two-year MEC examination weight, taken from the NHANES demographic file. Since the example uses exam/lab variables, it is the relevant weight to retain and use for weighted estimates. For formal NHANES inference, better to use `WTMEC2YR` together with `SDMVPSU` and `SDMVSTRA`.
